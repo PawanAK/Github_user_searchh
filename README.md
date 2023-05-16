@@ -1,115 +1,57 @@
-## Starter Project
+# GitHub User Details
 
-- css provided (global styles, styled components)
-- folders/files already setup
-- all imports included (warnings)
-- index.js for easier imports
+This project is a web application that allows users to enter a GitHub username and fetch information about the user. It's built using React and demonstrates how to handle API calls, style components, and render various types of graphs such as column and doughnut.
 
-## Styled Components
+![GitHub User Details Screenshot](screenshot.png)
 
-[Styled-Components - Main Docs](https://styled-components.com/)
+## Features
 
-```jsx
-import styled from "styled-components";
+- Search for GitHub users by their username
+- Display user information including name, bio, followers, following, and more
+- Render graphs showcasing user's repositories and languages used
+- Responsive design for mobile and desktop devices
 
-const ReactComponent = () => {
- // logic here
- return <Wrapper>
- {some content}
- </Wrapper>
-}
+## Live Demo
+
+The site is live at [https://githubb-user-details.netlify.app/](https://githubb-user-details.netlify.app/)
+
+## Technologies Used
+
+- React
+- GitHub API
+- CSS
+- Chart.js (for rendering graphs)
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone the repository:
+
+git clone https://github.com/yourusername/github-user-details.git
 
 
-const Wrapper = styled.htmlElement`
-write your styles here
-`
-export default ReactComponent
-```
+2. Change into the project directory:
 
-## React Icons
+cd github-user-details
 
-[React Icons - Main Docs](https://react-icons.github.io/react-icons/)
 
-```jsx
-import { FiUsers, FiUserPlus } from 'react-icons/fi';
-<FiUsers className='nameOfTheClass'> </FiUsers>;
-```
+3. Install the dependencies:
 
-## React Router Dom
+npm install
 
-version used - "react-router-dom": "^5.2.0",
 
-- [react-router-dom - Main Docs](https://reactrouter.com/web/guides/quick-start)
+4. Start the development server:
 
-- <Switch> renders the first child <Route> that matches
-- A <Route path="*"> always matches
+npm start
 
-## Gihthub API
 
-- [Root Endpoint](https://api.github.com)
-- [Get User](https://api.github.com/users/wesbos)
-- [Repos](https://api.github.com/users/john-smilga/repos?per_page=100)
-- [Followers](https://api.github.com/users/john-smilga/followers)
-- [Rate Limit](https://api.github.com/rate_limit)
+5. Open your browser and visit `http://localhost:3000`.
 
-  For unauthenticated requests, the rate limit allows for up to 60 requests per hour. Unauthenticated requests are associated with the originating IP address, and not the user making requests.
+## Contributing
 
-## Fusion Charts
+If you'd like to contribute to this project, please feel free to submit a pull request or open an issue.
 
-- [Fusion Charts - Main Docs](https://www.fusioncharts.com/)
-- [First React Chart](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)
-- [List Of Charts](https://www.fusioncharts.com/dev/chart-guide/list-of-charts)
-- [Themes](https://www.fusioncharts.com/dev/themes/introduction-to-themes)
+## License
 
-## Auth0
-
-- [Auth0 - Main Docs](https://auth0.com/)
-
-- Create Application
-- Choose : Single Page Web Applications
-- Choose : React
-- Go to Settings Tab
-- Copy/Paste Domain, ClientID - can be public (or use .env)
-- Add Domain -
-  for now http://localhost:3000 (DON'T COPY PASTE FROM URL BAR)
-
-  - Allowed Callback URLs
-  - Allowed Logout URLs
-  - Allowed Web Origins
-  - SAVE CHANGES!!!!!!!!!!!!!!!
-
-- Connections
-  email,social
-
-- [React SDK Docs](https://auth0.com/docs/libraries/auth0-react)
-- [REACT SDK API Docs](https://auth0.github.io/auth0-react/)
-
-## Deployment
-
-[Netlify](https://www.netlify.com/)
-
-## Additional Info
-
-#### Redirects with react-router-dom
-
-In order for routing to work on netlify, redirects was added to the public folder
-
-- \_redirects file in public
-
-```
-
-/*    /index.html   200
-
-```
-
-[Redirects Blog Post](https://dev.to/dance2die/page-not-found-on-netlify-with-react-router-58mc)
-
-#### Warnings and create-react-app
-
-package.json
-
-```js
-"build": "CI= react-scripts build",
-```
-
-[create-react-app Warning Fix Blog Post](https://community.netlify.com/t/how-to-fix-build-failures-with-create-react-app-in-production/17752)
+This project is licensed under the MIT License.
