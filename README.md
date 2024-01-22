@@ -2,7 +2,7 @@
 
 This project is a web application that allows users to enter a GitHub username and fetch information about the user. It's built using React and demonstrates how to handle API calls, style components, and render various types of graphs such as column and doughnut.
 
-![GitHub User Details Screenshot](./screenshot/img1.png)
+![GitHub User Details Screenshot](./screenshot/pawan.png)
 
 ![GitHub User Details Screenshot](./screenshot/img2.png)
 
